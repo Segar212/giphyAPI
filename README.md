@@ -1,6 +1,6 @@
 <img src="http://montanacodeschool.com/wp-content/uploads/2016/08/MCS_LOGO_v1-1.png" width="200" align="right"/>
 
-##Giphy API
+##Giphy APIÂ
 
 ##Purpose
 The purpose of this day project is practice doing API calls using jQuery.
