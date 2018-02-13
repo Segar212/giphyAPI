@@ -8,10 +8,14 @@ $(document).ready(function() {
     var request = before + query + after;
 
     $.ajax({url: request, success: function(result){
+      for(var i = 0; i < result.data.length; i++){
+        console.log(result.data[i].images.downsized_large.url);
+        $("#gifsFourLife").append('<img src = "'+ result.data[i].images.downsized_large.url +'"alt = "gif loads here" /> ');
+      }
 
-        console.log(result.data[0].images.downsized_medium.url);
     }});
-
+    //console.log(Object.keys(result.data[i].images));
+//console.log(result.data[i].images.downsized_medium.url);
   })
 
 });
